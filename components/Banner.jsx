@@ -15,7 +15,7 @@ function Banner() {
       <>
          
       
-          <div className="bg-black  relative -z-50 ">
+          <div className="bg-black  relative -z-50">
             <div className="container mx-auto">
                <div className="md:flex items-center justify-between gap-4">
                   <div className=" mb-60 space-y-6">

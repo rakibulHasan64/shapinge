@@ -57,15 +57,23 @@ function Aboutpage() {
    return (
       <>
          <div className="container mx-auto mt-10 mb-10 p-3">
-            <div className="">
-               <img src="/downloadpnh.png" className='w-full object-cover h-[400px]'  alt="" />
+            <div className="w-full">
+               <img
+                  src="/downloadpnh.png"
+                  className="w-full object-cover h-48 sm:h-64 md:h-80 lg:h-[400px]"
+                  alt="Company Banner"
+               />
             </div>
-            <h1 className='text-2xl sm:text-3xl md:text-6xl lg:text-6xl text-center mt-7 mb-4 font-bold'>Componey About</h1>
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-5 mt-14 ">
-                {data.map(item => <AboutCard key={item.id} item={item} />)}
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center mt-7 mb-4 font-bold">
+               Company About
+            </h1>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mx-auto mt-14">
+               {data.map(item => (
+                  <AboutCard key={item.id} item={item} />
+               ))}
             </div>
-
          </div>
+
          
       </>
    );

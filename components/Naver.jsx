@@ -1,11 +1,12 @@
 "use client";
-import { usePathname } from 'next/navigation'
+import { usePathname } from 'next/navigation';
 import Link from "next/link";
 import { useState } from "react";
 import { FaAlignRight } from "react-icons/fa6";
+
 function Naver() {
    const [showMenu, setShowMenu] = useState(false);
-   const pathNqme = usePathname();
+   const pathname = usePathname();
 
    return (
       <>
@@ -13,28 +14,29 @@ function Naver() {
             <div className="container mx-auto px-4">
                <div className="flex items-center justify-between py-4">
                   {/* Logo */}
-                  <div className="">
-                     <a href="#">
+                  <div>
+                     <Link href="/">
                         <img src="/logo.png" alt="logo" className="h-10" />
-                     </a>
+                     </Link>
                   </div>
                   {/* Mobile Menu Icon */}
                   <div
-                     className=" md:hidden cursor-pointer"
+                     className="md:hidden cursor-pointer"
                      onClick={() => setShowMenu(!showMenu)}
                   >
-                     <FaAlignRight className="text-white" />
+                     <FaAlignRight className="text-white text-xl" />
                   </div>
                   {/* Navigation List */}
                   <nav
                      className={`${showMenu ? "block" : "hidden"
                         } absolute top-16 left-0 w-full bg-black md:static md:block`}
                   >
-                     <ul className="flex flex-col md:flex-row items-center md:space-x-4 text-white">
+                     <ul className="flex flex-col md:flex-row items-center md:space-x-6 text-white">
                         <li>
                            <Link
-                              className={`${pathNqme === "/" ? "text-red-600  font-medium px-4 py-2 block" : ""}`}
                               href="/"
+                              className={`${pathname === "/" ? "text-red-600 font-medium" : ""
+                                 } px-4 py-2 block`}
                            >
                               HOME
                            </Link>
@@ -42,28 +44,32 @@ function Naver() {
 
                         <li>
                            <Link
-                              className={`${pathNqme === "/home" ? "text-red-600  font-medium px-4 py-2 block" : ""}`}
                               href="/home"
+                              className={`${pathname === "/home" ? "text-red-600 font-medium" : ""
+                                 } px-4 py-2 block`}
                            >
                               ABOUT US
                            </Link>
                         </li>
-                        
+
                         <li>
                            <Link
-                              className={`${pathNqme === "/product" ? "text-red-600  font-medium px-4 py-2 block" : ""}`}
                               href="/product"
+                              className={`${pathname === "/product" ? "text-red-600 font-medium" : ""
+                                 } px-4 py-2 block`}
                            >
                               OUR MISSION
                            </Link>
                         </li>
+
                         <li>
-                           <a
-                              className={`${pathNqme === "/servise" ? "text-red-600  font-medium px-4 py-2 block" : ""}`}
+                           <Link
                               href="/servise"
+                              className={`${pathname === "/servise" ? "text-red-600 font-medium" : ""
+                                 } px-4 py-2 block`}
                            >
                               BLOG
-                           </a>
+                           </Link>
                         </li>
                      </ul>
                   </nav>
