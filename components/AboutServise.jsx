@@ -7,47 +7,47 @@ const AboutServise = () => {
    const blogs = [
       {
          id: 1,
-         image: "https://via.placeholder.com/300x200?text=Blog+1",
+         image: "/images (1).png",
          title: "How to Build a Strong Company Culture",
          date: "12th May, 2021",
          readTime: "8 Min To Read",
-         description: "Learn how to create a positive and engaging workplace culture for your employees."
+         description: "Learn how to create a positive and engaging workplace culture for your employees..."
       },
       {
          id: 2,
-         image: "/about-img.png",
+         image: "/images (2).png",
          title: "The Role of Leadership in Business Success",
          date: "28th June, 2021",
          readTime: "10 Min To Read",
-         description: "Explore how effective leadership drives company growth and innovation."
+         description: "Explore how effective leadership drives company growth and innovation..."
       },
       {
          id: 3,
-         image: "/about-img.png",
+         image: "/images (3).png",
          title: "Scaling Your Startup Successfully",
          date: "15th July, 2021",
          readTime: "12 Min To Read",
-         description: "Tips and strategies for expanding your startup while maintaining quality and culture."
+         description: "Tips and strategies for expanding your startup while maintaining quality and culture..."
       },
       {
          id: 4,
-         image: "/about-img.png",
+         image: "/img-2.png",
          title: "Embracing Diversity in the Workplace",
          date: "20th August, 2021",
          readTime: "9 Min To Read",
-         description: "Understand the benefits of diversity and how to foster an inclusive work environment."
+         description: "Understand the benefits of diversity and how to foster an inclusive work environment..."
       },
       {
          id: 5,
-         image: "/about-img.png",
+         image: "/sea-2548098_640.jpg",
          title: "How Technology Impacts Modern Businesses",
          date: "5th September, 2021",
          readTime: "11 Min To Read",
-         description: "Discover how the latest technology trends are reshaping the business landscape."
+         description: "Discover how the latest technology trends are reshaping the business landscape..."
       },
       {
          id: 6,
-         image: "/about-img.png",
+         image: "/pexels-samuel-wolfl-628277-1427541.jpg",
          title: "Building a Brand that Resonates with Customers",
          date: "18th October, 2021",
          readTime: "10 Min To Read",
@@ -55,7 +55,7 @@ const AboutServise = () => {
       },
       {
          id: 7,
-         image: "/about-img.png",
+         image: "/chuttersnap-9cCeS9Sg6nU-unsplash.jpg",
          title: "Effective Marketing Strategies for Small Businesses",
          date: "25th November, 2021",
          readTime: "8 Min To Read",
@@ -63,7 +63,7 @@ const AboutServise = () => {
       },
       {
          id: 8,
-         image: "/about-img.png",
+         image: "/banner-img (1).png",
          title: "The Importance of Employee Well-being",
          date: "10th December, 2021",
          readTime: "9 Min To Read",

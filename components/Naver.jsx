@@ -33,7 +33,7 @@ function Naver() {
                      <ul className="flex flex-col md:flex-row items-center md:space-x-4 text-white">
                         <li>
                            <Link
-                              className={`${pathNqme === "/" ? "text-red-600 hover:text-blue-500 font-medium px-4 py-2 block" : ""}`}
+                              className={`${pathNqme === "/" ? "text-red-600  font-medium px-4 py-2 block" : ""}`}
                               href="/"
                            >
                               HOME
@@ -42,7 +42,7 @@ function Naver() {
 
                         <li>
                            <Link
-                              className={`${pathNqme === "/home" ? "text-red-600 hover:text-blue-500 font-medium px-4 py-2 block" : ""}`}
+                              className={`${pathNqme === "/home" ? "text-red-600  font-medium px-4 py-2 block" : ""}`}
                               href="/home"
                            >
                               ABOUT US
@@ -51,7 +51,7 @@ function Naver() {
                         
                         <li>
                            <Link
-                              className={`${pathNqme === "/home" ? "text-red-600 hover:text-blue-500 font-medium px-4 py-2 block" : ""}`}
+                              className={`${pathNqme === "/product" ? "text-red-600  font-medium px-4 py-2 block" : ""}`}
                               href="/product"
                            >
                               OUR MISSION
@@ -59,10 +59,10 @@ function Naver() {
                         </li>
                         <li>
                            <a
-                              className={`${pathNqme === "/servise" ? "text-red-600 hover:text-blue-500 font-medium px-4 py-2 block" : ""}`}
+                              className={`${pathNqme === "/servise" ? "text-red-600  font-medium px-4 py-2 block" : ""}`}
                               href="/servise"
                            >
-                              SERVICES
+                              BLOG
                            </a>
                         </li>
                      </ul>

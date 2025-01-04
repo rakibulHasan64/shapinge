@@ -1,14 +1,12 @@
+import Aboutpage from "@/components/Aboutpage";
 
 
 function page() {
    return (
       <>
          <div className="">
-            <p>lo
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora labore, cupiditate molestiae nostrum provident tenetur sit in hic reiciendis aspernatur. Ea sapiente libero ullam delectus fugiat consectetur amet ex numquam.
-            </p>
             
-            
+           <Aboutpage />
          </div>
          
       </>
